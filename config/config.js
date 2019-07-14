@@ -90,14 +90,76 @@ export default {
         {
           path: '/',
           name: 'welcome',
-          icon: 'smile',
+          icon: 'home',
           component: './Welcome',
         },
         {
-          path: '/fans',
-          name: '粉丝管理',
+          path: '/user',
+          name: '粉丝会员管理',
           icon: 'smile',
-          component: './Fans',
+          component: './member/Fans',
+        },
+        {
+          path: '/wechat',
+          name: '公众号运营',
+          icon: 'wechat',
+          routes: [
+            {
+              "path": "/wechat/mass",
+              "name": "微信群发",
+              "exact": true,
+              component: './wechat/Mass'
+            },
+            {
+              "path": "/wechat/microdialog",
+              "name": "消息列表",
+              "exact": true,
+              component: './wechat/Microdialog'
+            },
+            {
+              "path": "/wechat/material",
+              "name": "微信素材",
+              "exact": true,
+              component: './wechat/Material'
+            },
+            {
+              "path": "/wechat/qrcode",
+              "name": "二维码管理",
+              "exact": true,
+              component: './wechat/Qrcode'
+            },
+            {
+              "path": "/wechat/menu",
+              "name": "自定义菜单",
+              "exact": true,
+              component: './wechat/Menu'
+            },
+            {
+              "path": "/wechat/reply",
+              "name": "自动回复",
+              "exact": true,
+              component: './wechat/Reply'
+            },
+            {
+              "path": "/wechat/bind",
+              "name": "公众号管理",
+              "exact": true,
+              component: './wechat/Bind'
+            },
+          ]
+        },
+        {
+          path: '/member',
+          name: '学校管理',
+          icon: 'smile',
+          routes: [
+            {
+              "path": "/member/Fans",
+              "name": "粉丝管理",
+              "exact": true,
+              component: './member/Fans'
+            },
+          ]
         },
         {
           component: './404',

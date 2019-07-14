@@ -4,6 +4,7 @@ export default () => (
     style={{
       textAlign: 'center',
     }}
-  >xxx
+  >
+    管理
   </p>
 );
