@@ -1,0 +1,6 @@
+div.fans_row{
+  display: flex;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed #e8e8e8;
+}

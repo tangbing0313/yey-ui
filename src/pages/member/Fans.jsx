@@ -1,26 +1,29 @@
 import React from 'react';
-import classNames from 'classnames';
-import styles from './index.less';
-import { Button, Card, Col, Form, Icon, List, Row, Select, Tag } from 'antd';
+import styles from './Fans.less';
+import { Icon, Card, Col, Form, List, Row, Select, Tag } from 'antd';
+import FansSearch from '../components/fans_search/fans_search';
 
-const cls = classNames(styles.standardFormRow, {
-  [styles.standardFormRowBlock]: "block",
-  [styles.standardFormRowLast]: "last",
-  [styles.standardFormRowGrid]: "grid",
-});
-
-
+console.log(styles);
 export default () => (
   <>
-  <Card bordered={false}>
-    <Form layout="inline">
-      <div className={cls}>
-        dsffdsfd
+    <div className={styles.pagehead}>
+      <h4 className={styles.h4}>
+        用户列表{' '}
+        <span>
+          当前共筛选出 <b>123</b> 名用户 <Icon type="loading" />
+        </span>
+      </h4>
+      <div className={styles['pagehead-content']}>
+        <span>
+          当前共筛选出 <b>123</b> 名用户
+        </span>
       </div>
-      <div className={cls}>
-        dsffdsfd
-      </div>
-    </Form>
-  </Card>
+    </div>
+    <Card bordered={false}>
+      <Form layout="inline">
+        <div className={styles.fans_row}>高级筛选</div>
+        <div className={styles.fans_row}></div>
+      </Form>
+    </Card>
   </>
 );
