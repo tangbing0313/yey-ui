@@ -1,5 +1,6 @@
 div.fans_row {
   display: flex;
+  margin: 8px;
   margin-bottom: 16px;
   padding-bottom: 16px;
   border-bottom: 1px dashed #e8e8e8;
@@ -31,4 +32,30 @@ div.fans_row {
 .h4 span {
   font-weight: 400;
   font-size: 14px;
+}
+.gaojisousuo {
+  float: right;
+  margin-top: -10px;
+}
+.gjss_button {
+  margin-left: 10px;
+}
+.ggss_box {
+  margin: -24px;
+}
+
+.sslabel {
+  flex: 0 0 auto;
+  margin-right: 24px;
+  color: #000;
+  font-size: 14px;
+  text-align: right;
+  & > span {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    &::after {
+      content: '：';
+    }
+  }
 }
